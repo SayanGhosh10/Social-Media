@@ -149,7 +149,7 @@ export const posts = [
     firstName: "Steve",
     lastName: "Ralph",
     location: "New York, CA",
-    description: "Some really long random description",
+    description: "With great power comes great responsibility.",
     picturePath: "post1.jpeg",
     userPicturePath: "p3.jpeg",
     likes: new Map([
@@ -171,7 +171,7 @@ export const posts = [
     lastName: "Doing",
     location: "Korea, CA",
     description:
-      "Another really long random description. This one is longer than the previous one.",
+      "We all love him.",
     picturePath: "post2.jpeg",
     userPicturePath: "p6.jpeg",
     likes: new Map([
@@ -194,7 +194,7 @@ export const posts = [
     lastName: "Doe",
     location: "Utah, CA",
     description:
-      "This is the last really long random description. This one is longer than the previous one.",
+      "True Warriors never die.",
     picturePath: "post3.jpeg",
     userPicturePath: "p5.jpeg",
     likes: new Map([
@@ -218,7 +218,7 @@ export const posts = [
     lastName: "Dunn",
     location: "Los Angeles, CA",
     description:
-      "This is the last really long random description. This one is longer than the previous one. Man I'm bored. I'm going to keep typing until I run out of things to say.",
+      "A man with power and style.",
     picturePath: "post4.jpeg",
     userPicturePath: "p7.jpeg",
     likes: new Map([
@@ -242,7 +242,7 @@ export const posts = [
     lastName: "Vowel",
     location: "Chicago, IL",
     description:
-      "Just a short description. I'm tired of typing. I'm going to play video games now.",
+      "SMASH !",
     picturePath: "post5.jpeg",
     userPicturePath: "p8.jpeg",
     likes: new Map([
@@ -266,7 +266,7 @@ export const posts = [
     lastName: "Dunn",
     location: "Washington, DC",
     description:
-      "For the last time, I'm going to play video games now. I'm tired of typing. I'm going to play video games now.",
+      "❤️",
     picturePath: "post6.jpeg",
     userPicturePath: "p9.jpeg",
     likes: new Map([
