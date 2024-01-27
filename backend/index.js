@@ -17,7 +17,6 @@ import { verifyToken } from "./middleware/auth.js";
 import User from "./models/User.js";
 import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
-import { google } from 'googleapis';
 
 // Configurations
 const __filename = fileURLToPath(import.meta.url);
@@ -34,34 +33,14 @@ app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
 // File Storage
-// const storage = multer.diskStorage({
-//     destination: function (req, file, cb) {
-//         cb(null, "public/assets");
-//     },
-//     filename: function (req, file, cb) {
-//         cb(null, file.originalname);
-//     },
-// });
-
-
-// const multer = require('multer');
-
-// Configure Google Drive API
-const credentials = {
-    client_id: process.env.CLIENT_ID,
-    client_email: process.env.CLIENT_MAIL,
-    private_key_id: process.env.PRIVATE_KEY_ID,
-    private_key: process.env.PRIVATE_KEY,
-};
-
-const auth = new google.auth.GoogleAuth({
-  credentials,
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, "public/assets");
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname);
+    },
 });
-
-const drive = google.drive({ version: 'v3', auth });
-
-// Create multer storage with in-memory storage
-const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
 // Routes with File
